@@ -4,4 +4,8 @@
 .\#*
 
 # compiled
+__pycache__/
 *.pyc
+
+# hexlet
+dist/
