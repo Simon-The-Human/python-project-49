@@ -4,3 +4,6 @@
 
 ### Installation and Brain Even game demo:
 [![asciicast](https://asciinema.org/a/QeMABsUDbS1D0tM6IOWJucn05.svg)](https://asciinema.org/a/QeMABsUDbS1D0tM6IOWJucn05)
+
+### Brain Calc game demo:
+[![asciicast](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM.svg)](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM)
