@@ -19,14 +19,27 @@ def calc_game():
             return num1 * num2
     print('What is the result of the expression?')
     for _ in range(3):
-        num = random.randrange(1, 100)
-        num = calc(num)
-        print(f'Question: {num[0]}')
-        ans = input(f'Your answer: ')
-        if ans == num[1]:
+        num1 = random.randrange(1, 100)
+        num2 = random.randrange(1, 100)
+        acts = ['+', '-', '*']
+        act = random.choice(acts)
+        num = calc(num1, num2, act)
+        print(f'Question: {num1} {act} {num2}')
+        ans = int(input(f'Your answer: '))
+        if ans == num:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{num[1]}'.\nLet's try again, {username}!")
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{num}'.\nLet's try again, {username}!")
             break
     else:
         print(f'Congratulations, {username}!')
+
+
+def main():
+    print("Welcome to the Brain Games!")
+    welcome_user()
+    calc_game()
+
+
+if __name__ == "__main__":
+    main()
