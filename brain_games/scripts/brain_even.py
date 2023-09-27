@@ -10,13 +10,14 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
-def even_game():
-    def iseven(num):
-        even = 'no'
-        if num % 2 == 0:
-            even = 'yes'
-        return (num, even)
-    
+def iseven(num):
+    even = 'no'
+    if num % 2 == 0:
+        even = 'yes'
+    return (num, even)
+
+
+def even_game():    
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         num = random.randrange(1, 100)
