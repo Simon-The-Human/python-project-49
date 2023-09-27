@@ -7,3 +7,6 @@
 
 ### Brain Calc game demo:
 [![asciicast](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM.svg)](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM)
+
+### Brain HCF game demo:
+[![asciicast](https://asciinema.org/a/7xp0e1wBhaWOEzLoMiFQT3WIs.svg)](https://asciinema.org/a/7xp0e1wBhaWOEzLoMiFQT3WIs)
