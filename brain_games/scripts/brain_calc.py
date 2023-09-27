@@ -9,14 +9,16 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
+def calc(num1, num2, act):
+    if act == "+":
+        return num1 + num2
+    if act == "-":
+        return num1 - num2
+    if act == "*":
+        return num1 * num2
+
+
 def calc_game():
-    def calc(num1, num2, act):
-        if act == "+":
-            return num1 + num2
-        if act == "-":
-            return num1 - num2
-        if act == "*":
-            return num1 * num2
     print('What is the result of the expression?')
     for _ in range(3):
         num1 = random.randrange(1, 100)
