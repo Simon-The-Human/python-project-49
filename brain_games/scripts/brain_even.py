@@ -9,6 +9,12 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
+def wrong_answer(ans, num, username):
+    answer = f"""'{ans}' is wrong answer ;(. Correct answer was '{num}'.
+Let's try again, {username}!"""
+    return answer
+
+
 def iseven(num):
     even = 'no'
     if num % 2 == 0:
@@ -26,7 +32,7 @@ def even_game():
         if ans == num[1]:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{num[1]}'.\nLet's try again, {username}!")
+            print(wrong_answer(ans, num[1], username))
             break
     else:
         print(f'Congratulations, {username}!')

@@ -9,6 +9,12 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
+def wrong_answer(ans, num, username):
+    answer = f"""'{ans}' is wrong answer ;(. Correct answer was '{num}'.
+Let's try again, {username}!"""
+    return answer
+
+
 def progression(num, coef):
     raw = list()
     c = num
@@ -42,7 +48,7 @@ def calc_game():
         if ans == raw_q["ans"]:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{raw_q['ans']}'.\nLet's try again, {username}!")
+            print(wrong_answer(ans, raw_q["ans"], username))
             break
     else:
         print(f'Congratulations, {username}!')

@@ -18,6 +18,12 @@ def calc(num1, num2, act):
         return num1 * num2
 
 
+def wrong_answer(ans, num, username):
+    answer = f"""'{ans}' is wrong answer ;(. Correct answer was '{num}'.
+Let's try again, {username}!"""
+    return answer
+
+
 def calc_game():
     print('What is the result of the expression?')
     for _ in range(3):
@@ -27,11 +33,11 @@ def calc_game():
         act = random.choice(acts)
         num = calc(num1, num2, act)
         print(f'Question: {num1} {act} {num2}')
-        ans = int(input(f'Your answer: '))
+        ans = int(input('Your answer: '))
         if ans == num:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{num}'.\nLet's try again, {username}!")
+            print(wrong_answer(ans, num, username))
             break
     else:
         print(f'Congratulations, {username}!')

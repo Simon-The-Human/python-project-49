@@ -9,6 +9,12 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
+def wrong_answer(ans, num, username):
+    answer = f"""'{ans}' is wrong answer ;(. Correct answer was '{num}'.
+Let's try again, {username}!"""
+    return answer
+
+
 def gcd(num1, num2):
     while num2 != 0:
         num1, num2 = num2, num1 % num2
@@ -25,7 +31,7 @@ def gcd_game():
         if ans == gcd_num:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{gcd_num}'.\nLet's try again, {username}!")
+            print(wrong_answer(ans, gcd_num, username))
             break
     else:
         print(f'Congratulations, {username}!')

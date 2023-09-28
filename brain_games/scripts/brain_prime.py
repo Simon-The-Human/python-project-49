@@ -9,6 +9,12 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
+def wrong_answer(ans, num, username):
+    answer = f"""'{ans}' is wrong answer ;(. Correct answer was '{num}'.
+Let's try again, {username}!"""
+    return answer
+
+
 def prime(num):
     prime = 'yes'
     for i in range(2, num // 2 + 1):
@@ -27,7 +33,7 @@ def prime_game():
         if ans == is_prime:
             print('Correct!')
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{is_prime}'.\nLet's try again, {username}!")
+            print(wrong_answer(ans, is_prime, username))
             break
     else:
         print(f'Congratulations, {username}!')
