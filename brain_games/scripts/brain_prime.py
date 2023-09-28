@@ -19,7 +19,7 @@ def prime(num):
 
 
 def prime_game():    
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for _ in range(3):
         num = random.randrange(1, 100)
         print(f'Question: {num}')
