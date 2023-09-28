@@ -13,6 +13,9 @@ brain-calc:
 brain-hcf:
 	poetry run brain-hcf
 
+brain-ap:
+	poetry run brain-ap
+
 build:
 	poetry build
 
