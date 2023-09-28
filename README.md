@@ -13,3 +13,6 @@
 
 ### Brain AP (Arithmetic Progression) game demo:
 [![asciicast](https://asciinema.org/a/Mbdo8OWaU5GjEfpuXnyoKTGma.svg)](https://asciinema.org/a/Mbdo8OWaU5GjEfpuXnyoKTGma)
+
+### Brain Prime game demo:
+[![asciicast](https://asciinema.org/a/qUwAjxTfr25eqQALQzPgVZGQg.svg)](https://asciinema.org/a/qUwAjxTfr25eqQALQzPgVZGQg)
