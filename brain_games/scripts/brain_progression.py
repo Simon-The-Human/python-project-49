@@ -9,7 +9,7 @@ def welcome_user():
     print(f"Hello, {username}!")
 
 
-def ap(num, coef):
+def progression(num, coef):
     raw = list()
     c = num
     for _ in range(10):
@@ -18,7 +18,7 @@ def ap(num, coef):
     return raw
 
 
-def ap_q(raw):
+def progression_q(raw):
     c = random.randint(0, 9)
     raw_q = {
         "raw": raw,
@@ -34,8 +34,8 @@ def calc_game():
     for _ in range(3):
         num = random.randrange(1, 100)
         coef = random.randrange(1, 20)
-        raw = ap(num, coef)
-        raw_q = ap_q(raw)
+        raw = progression(num, coef)
+        raw_q = progression_q(raw)
         print(f'Question: {raw_q["raw"]}')
         ans = int(input(f'Your answer: '))
         if ans == raw_q["ans"]:
