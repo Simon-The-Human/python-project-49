@@ -10,11 +10,11 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
-brain-hcf:
-	poetry run brain-hcf
+brain-gcd:
+	poetry run brain-gcd
 
-brain-ap:
-	poetry run brain-ap
+brain-progression:
+	poetry run brain-progression
 
 brain-prime:
 	poetry run brain-prime
