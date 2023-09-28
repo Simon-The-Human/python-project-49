@@ -22,13 +22,13 @@ def iseven(num):
     return (num, even)
 
 
-def even_game():    
+def even_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         num = random.randrange(1, 100)
         num = iseven(num)
         print(f'Question: {num[0]}')
-        ans = input(f'Your answer: ')
+        ans = input('Your answer: ')
         if ans == num[1]:
             print('Correct!')
         else:

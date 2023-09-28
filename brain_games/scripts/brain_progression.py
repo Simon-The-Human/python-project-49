@@ -44,7 +44,7 @@ def calc_game():
         raw_q = progression_q(raw)
         question = " ".join(str(i) for i in raw_q["raw"])
         print(f'Question: {question}')
-        ans = int(input(f'Your answer: '))
+        ans = int(input('Your answer: '))
         if ans == raw_q["ans"]:
             print('Correct!')
         else:

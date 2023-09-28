@@ -20,6 +20,7 @@ def gcd(num1, num2):
         num1, num2 = num2, num1 % num2
     return num1
 
+
 def gcd_game():
     print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
@@ -27,7 +28,7 @@ def gcd_game():
         num2 = random.randrange(1, 100)
         gcd_num = gcd(num1, num2)
         print(f'Question: {num1} {num2}')
-        ans = int(input(f'Your answer: '))
+        ans = int(input('Your answer: '))
         if ans == gcd_num:
             print('Correct!')
         else:

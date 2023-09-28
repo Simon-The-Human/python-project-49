@@ -23,13 +23,13 @@ def prime(num):
     return prime
 
 
-def prime_game():    
+def prime_game():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for _ in range(3):
         num = random.randrange(1, 100)
         print(f'Question: {num}')
         is_prime = prime(num)
-        ans = input(f'Your answer: ')
+        ans = input('Your answer: ')
         if ans == is_prime:
             print('Correct!')
         else:
