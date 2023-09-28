@@ -8,5 +8,8 @@
 ### Brain Calc game demo:
 [![asciicast](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM.svg)](https://asciinema.org/a/8OPciDEhc8R7boYPu7rYzMxKM)
 
-### Brain HCF game demo:
+### Brain HCF (Highest Common Factor) game demo:
 [![asciicast](https://asciinema.org/a/7xp0e1wBhaWOEzLoMiFQT3WIs.svg)](https://asciinema.org/a/7xp0e1wBhaWOEzLoMiFQT3WIs)
+
+### Brain AP (Arithmetic Progression) game demo:
+[![asciicast](https://asciinema.org/a/Mbdo8OWaU5GjEfpuXnyoKTGma.svg)](https://asciinema.org/a/Mbdo8OWaU5GjEfpuXnyoKTGma)
