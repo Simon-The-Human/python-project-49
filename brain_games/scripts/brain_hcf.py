@@ -10,15 +10,9 @@ def welcome_user():
 
 
 def hcf(num1, num2):
-    if num1 > num2:
-        smaller = num2
-    else:
-        smaller = num1
-    for i in range(1,smaller + 1):
-        if((num1 % i == 0) and(num2 % i == 0)):
-            hcf = i
-    return hcf
-
+    while num2 != 0:
+        num1, num2 = num2, num1 % num2
+    return num1
 
 def hcf_game():
     print('What is the result of the expression?')
