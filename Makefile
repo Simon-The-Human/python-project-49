@@ -16,6 +16,9 @@ brain-hcf:
 brain-ap:
 	poetry run brain-ap
 
+brain-prime:
+	poetry run brain-prime
+
 build:
 	poetry build
 
