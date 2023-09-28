@@ -15,7 +15,7 @@ def gcd(num1, num2):
     return num1
 
 def gcd_game():
-    print('What is the result of the expression?')
+    print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
         num1 = random.randrange(1, 100)
         num2 = random.randrange(1, 100)
