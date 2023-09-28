@@ -36,7 +36,8 @@ def calc_game():
         coef = random.randrange(1, 20)
         raw = progression(num, coef)
         raw_q = progression_q(raw)
-        print(f'Question: {raw_q["raw"]}')
+        question = " ".join(str(i) for i in raw_q["raw"])
+        print(f'Question: {question}')
         ans = int(input(f'Your answer: '))
         if ans == raw_q["ans"]:
             print('Correct!')
