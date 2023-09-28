@@ -6,7 +6,7 @@ import prompt
 
 def welcome_user():
     global username
-    username = prompt.string("Present yourself: ")
+    username = prompt.string("May I have your name? ")
     print(f"Hello, {username}!")
 
 
